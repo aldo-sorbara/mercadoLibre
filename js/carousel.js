@@ -3,4 +3,7 @@ jQuery(function($){
     	limitPerPage: 3,
     	pagination:true
 	});
+	$('.ch-carousel-mask').css({
+		'height':'auto'
+	})
 });
