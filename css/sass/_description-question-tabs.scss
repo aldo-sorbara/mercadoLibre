@@ -1,0 +1,53 @@
+/******** Description - Question Tabs Section  ***************/
+
+%bold{
+  font-weight:bold;
+}
+
+label {
+  @extend %bold;
+}
+
+.ch-tabs input[type="radio"], .tab-content {
+  display: none;
+}
+
+label:nth-child(2) {
+  margin-left: 10px;
+}
+
+#tab1:checked ~ .ch-box-lite #tab1-a, #tab2:checked ~ .ch-box-lite #tab2-a {
+  display: block;
+}
+
+.demo-tabs h6 {
+  border: 1px solid #dedede;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+input[type="radio"]:checked + label h6 {
+  border: 1px solid #dedede;
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(#f0f0f0, #fff);
+  border-bottom: 1px solid #fff;
+  cursor: default;
+  @extend %bold;
+  box-shadow: 2px 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.buyer {
+  color: #3a87ad;
+}
+
+.seller {
+  color: #468847;
+}
