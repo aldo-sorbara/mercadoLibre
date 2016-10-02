@@ -1,9 +1,12 @@
-jQuery(function($){  	
-  	var carousel = new ch.Carousel(ch('.demo-carousel')[0], {
-    	limitPerPage: 3,
-    	pagination:true
+jQuery(window).bind("load", function() {
+
+	jQuery(function($){  	
+	  	var carousel = new ch.Carousel(ch('.demo-carousel')[0], {
+	    	limitPerPage: 3,
+	    	pagination:true
+		});
+		$('.ch-carousel-mask').css({
+			'height':'auto'
+		})
 	});
-	$('.ch-carousel-mask').css({
-		'height':'auto'
-	})
 });
