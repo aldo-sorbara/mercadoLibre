@@ -8,7 +8,7 @@ var uglify = require('gulp-uglify');
 var postcss      = require('gulp-postcss');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
-
+var htmlmin = require('gulp-htmlmin');
  
 gulp.task('css', function () 
 {
@@ -27,4 +27,13 @@ gulp.task('js', function()
     .pipe(gulp.dest('js'))
     .pipe(notify("Ha finalizado la task js!"));
 });
+
+gulp.task('html', function() {
+  return gulp.src('*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest(function(file){
+    	return file.base;
+    }));
+});
+
 
