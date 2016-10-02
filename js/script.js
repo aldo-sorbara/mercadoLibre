@@ -1,4 +1,5 @@
 jQuery(function($){  	
+  var zoom1 = new ch.Zoom(ch('#zoom-default')[0]);
 	if (matchMedia) {
     var mq = window.matchMedia("(min-width: 1200px)");
     mq.addListener(WidthChange);
