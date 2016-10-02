@@ -1,1 +1,1 @@
-jQuery(window).bind("load",function(){jQuery(function(o){new ch.Carousel(ch(".demo-carousel")[0],{limitPerPage:3,pagination:!0});jQuery(".ch-carousel-mask").css({height:"auto"})})}),jQuery(function(o){new ch.Zoom(ch("#zoom-default")[0])});
+jQuery(function(e){new ch.Carousel(ch(".demo-carousel")[0],{limitPerPage:3,pagination:!0})}),jQuery(function(e){new ch.Zoom(ch("#zoom-default")[0])});
