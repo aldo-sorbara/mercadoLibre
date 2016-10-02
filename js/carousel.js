@@ -5,7 +5,7 @@ jQuery(window).bind("load", function() {
 	    	limitPerPage: 3,
 	    	pagination:true
 		});
-		$('.ch-carousel-mask').css({
+		jQuery('.ch-carousel-mask').css({
 			'height':'auto'
 		})
 	});
